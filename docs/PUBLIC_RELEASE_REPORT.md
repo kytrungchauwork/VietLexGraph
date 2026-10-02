@@ -3,7 +3,7 @@
 - **Version:** v1.0.0.
 - **Status:** SOFTWARE READY / EXPLORATORY EVALUATION AVAILABLE.
 - **Repository:** https://github.com/kytrungchauwork/VietLexGraph.
-- **Audited code commit:** recorded after staging verification below.
+- **Audited code commit:** `a3bed86dcd4a1b4018c09a05f9fd6ddf31fc157d` (all release code; subsequent report update is documentation-only).
 - **Release commit:** resolve the immutable release reference with `git rev-parse v1.0.0^{commit}`. The report's own documentation commit may follow the audited code commit.
 
 ## Distribution
@@ -26,15 +26,15 @@ python scripts/download_model.py  # optional; deterministic sample works without
 streamlit run app.py
 ```
 
-The lighter demo uses `requirements-app.txt`. CI uses `requirements-test.txt`, without downloading an encoder or training a model. `requirements-dev.txt` also includes full training and audit tooling. The synthetic sample reads 3 → 4 → 5 → 6 for target article6 and displays reasons, evidence and confidence.
+The lighter demo uses `requirements-app.txt`. CI uses `requirements-test.txt`, without downloading an encoder or training a model. `requirements-dev.txt` also includes full training and audit tooling. The synthetic sample reads 3 → 4 → 5 → 6 for target article 6 and displays reasons, evidence and confidence.
 
 For your own local corpus experiment, run preparation, training and evaluation as documented in the README. Evaluation scripts without required local inputs report NOT RUN explicitly and do not fabricate scores. The private AI-assisted reviewed assessment is not reproducible from public source alone because its annotations are intentionally excluded.
 
 ## Validation and scope
 
-Publication checks inspect tracked paths against an exact allowlist, common secret patterns, symlinks, unexpected binaries and size limits. Local unit/app tests, formatting, lint, source-only demo and Docker checks are run before publication. The actual hosted CI result is visible in Actions; consult the release commit's workflow rather than assuming local tests certify the remote run.
+Publication checks inspect tracked paths against an exact allowlist, common secret patterns, symlinks, unexpected binaries and size limits. Local verification passed: **51 tests** in both the research workspace and a source-only checkout using an independently installed Python 3.12 environment; Ruff lint/format and pip check passed. No allowlisted file exceeds 50 MB. Docker built from the sanitized source, and a browser verified the six-article sample, expected four-step path, evidence/confidence explanations and missing-model fallback. Both evaluation commands completed against existing local experiment inputs; the source-only checkout correctly reports NOT RUN when those private inputs are absent. The actual hosted CI result is visible in Actions; consult the release commit's workflow rather than assuming local tests certify the remote run.
 
-The evaluated corpus is limited to30 documents/2,502 articles. The reviewed assessment is AI-assisted, user-reviewed and exploratory. No independent human-only prerequisite validation, production readiness, authoritative legal interpretation or research superiority is claimed. See [limitations](LIMITATIONS.md), [evaluation](evaluation.md), and [related work](RELATED_WORK.md).
+The evaluated corpus is limited to 30 documents / 2,502 articles. The reviewed assessment is AI-assisted, user-reviewed and exploratory. No independent human-only prerequisite validation, production readiness, authoritative legal interpretation or research superiority is claimed. See [limitations](LIMITATIONS.md), [evaluation](evaluation.md), and [related work](RELATED_WORK.md).
 
 ## License notes
 
