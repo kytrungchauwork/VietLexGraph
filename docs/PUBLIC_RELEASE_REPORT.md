@@ -39,3 +39,7 @@ The evaluated corpus is limited to 30 documents / 2,502 articles. The reviewed a
 ## License notes
 
 An actual MIT `LICENSE` is included in both source and inference artifact. Project code, original synthetic fixtures and project-trained inference parameters are MIT. Downloaded dataset/model assets retain their upstream licenses and notices. Third-party dependency metadata is documented in [notices](../THIRD_PARTY_NOTICES.md); bundled wheel licenses must be preserved. No absolute legal clearance claim is made.
+
+## Post-publication verification
+
+The public v1.0.0 tag resolves to `3107e9c26897d9cc06fcbdf865f9b31c4fde467f`. [Hosted CI for that commit passed](https://github.com/kytrungchauwork/VietLexGraph/actions/runs/36966090371). A fresh HTTPS clone passed all 51 tests and the exact 63-file publication allowlist check. The download script retrieved the published GitHub Release archive, verified its pinned SHA-256, and installed parameters that successfully loaded through `RelationPredictor`. Evaluation commands explicitly returned NOT RUN without local evaluation inputs. This verification did not download the separate E5 encoder or rerun ML training.
