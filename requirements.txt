@@ -1,6 +1,6 @@
 # Tested direct dependencies; Python 3.12
 numpy==2.5.3
-pandas==2.3.3
+pandas==3.0.6
 pyarrow==23.0.1
 scikit-learn==1.9.1
 networkx==3.7
