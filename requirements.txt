@@ -1,0 +1,15 @@
+# Tested direct dependencies; Python 3.12
+numpy==2.5.3
+pandas==2.3.3
+pyarrow==23.0.1
+scikit-learn==1.9.1
+networkx==3.7
+PyYAML==6.0.3
+joblib==1.6.0
+torch==2.14.1
+transformers==5.18.0
+sentencepiece==0.2.2
+datasets==5.0.1
+streamlit==1.64.0
+plotly==6.9.0
+pytest==9.1.1

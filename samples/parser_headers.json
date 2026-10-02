@@ -1,0 +1,31 @@
+{
+  "text_sha256": "52c6febeffada8bcabf95aefd158d15e80e0fdb0abf4894d666b103e1ea9ca17",
+  "annotation_provenance": "Agent-transcribed expectations from user-provided synthetic specification",
+  "human_reviewed": false,
+  "articles": [
+    {
+      "number": "1",
+      "title": "Phạm vi điều chỉnh"
+    },
+    {
+      "number": "2",
+      "title": "Đối tượng áp dụng"
+    },
+    {
+      "number": "3",
+      "title": "Giải thích từ ngữ"
+    },
+    {
+      "number": "4",
+      "title": "Nghĩa vụ chung"
+    },
+    {
+      "number": "5",
+      "title": "Nghĩa vụ báo cáo"
+    },
+    {
+      "number": "6",
+      "title": "Xử lý vi phạm"
+    }
+  ]
+}

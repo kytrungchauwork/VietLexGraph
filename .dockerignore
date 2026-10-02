@@ -1,0 +1,14 @@
+*
+!Dockerfile
+!requirements-app.txt
+!app.py
+!config.yaml
+!LICENSE
+!src/
+!src/*.py
+!src/explanation/
+!src/explanation/*.py
+!scripts/
+!scripts/prepare_data.py
+!samples/
+!samples/sample_legal_text.txt
