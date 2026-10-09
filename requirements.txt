@@ -9,7 +9,7 @@ joblib==1.6.0
 torch==2.14.1
 transformers==5.18.0
 sentencepiece==0.2.2
-datasets==5.0.1
+datasets==5.1.0
 streamlit==1.64.0
 plotly==6.9.0
 pytest==9.1.1
