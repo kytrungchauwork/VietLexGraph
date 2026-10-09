@@ -1,6 +1,6 @@
 # Deterministic-only Docker runtime; no encoder/checkpoints bundled
 numpy==2.5.3
 networkx==3.7
-streamlit==1.64.0
+streamlit==1.65.0
 plotly==6.9.0
 PyYAML==6.0.3
